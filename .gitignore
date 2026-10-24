@@ -1,0 +1,7 @@
+.DS_Store
+.build/
+dist/
+*.log
+.impeccable/
+/PRODUCT.md
+/DESIGN.md

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>zh_CN</string>
+    <key>CFBundleDisplayName</key>
+    <string>Typing Pet</string>
+    <key>CFBundleName</key>
+    <string>Typing Pet</string>
+    <key>CFBundleExecutable</key>
+    <string>TypingPet</string>
+    <key>CFBundleIdentifier</key>
+    <string>local.typingpet.mac</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>13.0</string>
+    <key>LSUIElement</key>
+    <true/>
+    <key>NSHighResolutionCapable</key>
+    <true/>
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+    <key>NSInputMonitoringUsageDescription</key>
+    <string>Typing Pet 需要感知键盘和已绑定的鼠标按下事件，让桌面宠物随输入动作变化。不会保存或传输输入内容。</string>
+    <key>NSHumanReadableCopyright</key>
+    <string>非官方 macOS 实现，供个人使用。原项目及角色图片：Typing Pet / swoonqx。</string>
+</dict>
+</plist>
