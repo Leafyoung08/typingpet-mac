@@ -1,4 +1,5 @@
 import AppKit
+import ImageIO
 
 enum SelfTests {
     static func run()->Int32 {
@@ -29,8 +30,12 @@ enum SelfTests {
             try check(recovered.settings.size == 800 && recovered.settings.opacity == 0.15 && recovered.settings.bounce == 18,"校正越界设置")
             let basic=PetImageLoader.load("basic")
             try check(basic != nil && basic!.frames.count == 1,"加载内置 PNG")
-            try check(basic!.size.width == 800 && basic!.size.height == 500,"保留原图尺寸")
             guard let imageURL=PetFiles.imageURL("basic") else{throw NSError(domain:"SelfTests",code:2)}
+            let imageSource=CGImageSourceCreateWithURL(imageURL as CFURL,nil)
+            let properties=imageSource.flatMap {CGImageSourceCopyPropertiesAtIndex($0,0,nil) as? [CFString:Any]}
+            let width=(properties?[kCGImagePropertyPixelWidth] as? NSNumber)?.doubleValue
+            let height=(properties?[kCGImagePropertyPixelHeight] as? NSNumber)?.doubleValue
+            try check(basic!.size.width == CGFloat(width ?? 0) && basic!.size.height == CGFloat(height ?? 0),"保留内置原图尺寸")
             let imported=try PetImageLoader.validateAndImport(imageURL)
             try check(PetImageLoader.load(imported)?.frames.count == 1,"复制与加载自定义图片")
             let invalid=root.appendingPathComponent("invalid.png");try Data("invalid image".utf8).write(to:invalid)

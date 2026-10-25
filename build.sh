@@ -69,7 +69,7 @@ else
 fi
 xcrun lipo "$APP_STAGE/Contents/MacOS/TypingPet" -verify_arch "${ARCHS[@]}"
 
-# Use the original transparent image to make a padded macOS icon.
+# Use the bundled default pose to make a padded macOS icon.
 cat > "$BUILD_DIR/make-icon.swift" <<'SWIFT'
 import AppKit
 

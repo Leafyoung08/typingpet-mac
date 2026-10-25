@@ -33,6 +33,6 @@
     <key>NSInputMonitoringUsageDescription</key>
     <string>Typing Pet 需要感知键盘和已绑定的鼠标按下事件，让桌面宠物随输入动作变化。不会保存或传输输入内容。</string>
     <key>NSHumanReadableCopyright</key>
-    <string>非官方 macOS 实现，供个人使用。原项目及角色图片：Typing Pet / swoonqx。</string>
+    <string>非官方 macOS 实现。基础状态图片由使用者提供；功能参考及保留的模式图片：Typing Pet / swoonqx。</string>
 </dict>
 </plist>
