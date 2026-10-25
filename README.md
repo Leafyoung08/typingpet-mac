@@ -1,6 +1,6 @@
 # typingpet-mac
 
-让桌面小宠物跟着打字交替抬手、轻轻弹跳。内置本项目使用者提供的三张默认状态图，使用原生 macOS 窗口与中文设置界面，支持自定义角色、按键动作和多宠物。
+（默认版本为阿蒲oc）让桌面小宠物跟着打字交替抬手、轻轻弹跳。内置本项目使用者提供的三张默认状态图，使用原生 macOS 窗口与中文设置界面，支持自定义角色、按键动作和多宠物。
 
 这是根据 [swoonqx/TypingPet](https://github.com/swoonqx/TypingPet) 公开功能说明独立实现的非官方 Mac 版，保留原版本的两张模式图片。默认三张基础状态图由本项目使用者提供，权利归相应权利人。原项目与素材来源见 [THIRD-PARTY-NOTICES.md](THIRD-PARTY-NOTICES.md)。
 
